@@ -1,14 +1,7 @@
-/*
-
-Stimulus Template
-
-http://www.templatemo.com/tm-498-stimulus
-
-*/
 
 body {
 	background: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
 	font-weight: 300;
     overflow-x: hidden;
@@ -86,7 +79,7 @@ p {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 1.6px;
-  padding: 12px 36px;
+  padding: 12px 0px;
   margin-top: 42px;
   transition: all 0.4s ease-in-out;
   text-transform: uppercase;
@@ -98,6 +91,22 @@ p {
   color: #092256;
 }
 
+.next-btn
+{
+	padding-right:30px;
+	padding-left:30px;
+	background-color: #092256;
+}
+.next-btn:focus
+{
+	background-color: #092256;
+}
+.next-btn:hover
+{
+	background-color: #fff;
+	color: #092256;
+	border: 1px solid #092256;
+}
 .btn-success:focus {
   background-color: #000;
   border-color: transparent;
@@ -406,6 +415,40 @@ a:hover, a:active, a:focus {
   padding: 0 45px 0 45px;
 }
 
+/* Mobile Phone ----------- */
+@media only screen and (min-width: 360px) and (max-width: 767px){
+/* Styles */
+#home .home-img {
+  background: url('../images/home-img.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 70vh;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 359px){
+/* Styles */
+#home .home-img {
+  background: url('../images/home-img.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 60vh;
+}
+}
+
+/* Tablets ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+/* Styles */
+#home .home-img {
+  background: url('../images/home-img.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100vh;
+}
+}
+
 /*---------------------------------------
    Modal section              
 -----------------------------------------*/
@@ -416,7 +459,7 @@ a:hover, a:active, a:focus {
 .modal-header h4
 {
   text-align: center;
-  padding-top: 150px;
+  padding-top: 105px;
   font-family: Raleway;
   font-size: 50px;
   text-transform: uppercase;
@@ -426,6 +469,87 @@ a:hover, a:active, a:focus {
   font-family: Raleway;
   font-size:21px;
   text-align: center;
+}
+.modal-body h6
+{
+	color:#00194E;
+	font-style:italic;
+	font-weight:600;
+}
+.modal-footer
+{
+	padding-top:20px;
+	padding-bottom:65px;
+}
+.form-group {
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.input-group {
+  position: relative;
+}
+.form-control {
+  display: block;
+  font-family: Raleway;
+  height: 36px;
+  width: 100%;
+  border: none;
+  border-radius: 0 !important;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid #757575;
+}
+.input-group .form-control {
+  position: relative;
+  z-index: inherit;
+  float: inherit;
+  width: 100%;
+  margin-bottom: 0;
+}
+.form-control:focus {
+  border-color: #757575;
+  outline: none;
+  box-shadow: none;
+}
+
+label {
+  position: absolute;
+  font-family: Raleway;
+  font-style: italic;
+  top: -18px;
+  color: #999;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.form-horizontal .control-label {
+  position: relative;
+  top: 0;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    font-size: 16px;
+  }
+}
+.float-label {
+  left: 0;
+  font-family: Raleway;
+  top: 7px;
+  font-size: 16px;
+  pointer-events: none;
+}
+/* active state */
+.form-control:focus ~ .float-label,
+.form-control:valid ~ .float-label {
+  top: -18px;
+  font-size: 12px;
 }
 /*---------------------------------------
    About section              
